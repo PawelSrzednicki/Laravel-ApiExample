@@ -17,7 +17,7 @@
 git clone https://github.com/PawelSrzednicki/Laravel-ApiExample.git
 
 # Access project
-cd Laravel-simple-news-site
+cd Laravel-ApiExample
 ```
 
 ## Installation
