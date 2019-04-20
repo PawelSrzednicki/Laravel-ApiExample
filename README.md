@@ -1,22 +1,52 @@
-# Simple Laravel Api
-Simple Api made with Laravel for Vue application.
-Vue app can be found [here](https://github.com/PawelSrzednicki/Vuejs-SimpleWebsite/master/README.md)
 
-# What's new
-1. Added [Jwt auth](https://github.com/tymondesigns/jwt-auth) 
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
 
-
-# Todo
-1. Action for show, create,edit and delete.
-
-
-
-# Project setup
-1. Run npm install and composer update in project directory.
-2. Run php artisan key:generate.
-3. Change database credentials in env file.
-4. Run php artisan migrate to create database tables.
-5. Run php artisan db:seed to place dummy data in database.
-6. Launch application running php artisan serve.
+## Laravel 5.7 test api with jwt authentication
+> Test api app with  article and jwt auth. 
 
 
+## Download
+```
+# clone
+git clone https://github.com/PawelSrzednicki/Laravel-ApiExample.git
+
+# Access project
+cd Laravel-simple-news-site
+```
+
+## Installation
+```
+# Install missing files
+composer install
+
+# Create file .env
+cp .env.example .env
+
+# Generate key
+php artisan key:generate
+
+# Generate jwt secret
+php artisan jwt:secret
+
+# Run migrations (tables and Seeders)
+php artisan migrate --seed
+
+# install bootstrap and all dependencies
+npm install
+
+# create css and js files 
+npm run dev - for development
+
+npm run prod - for production
+
+# run build in server
+php artisan serve
+
+# Access project
+http://localhost:8080
+```
